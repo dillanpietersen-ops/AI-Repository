@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width", initial-scale="1.0" />
+        <title>
+            {% block title %}
+            Sticky Note Board
+            {% endblock title %}
+        </title>
+        <!--Custom CSS style sheet defined-->
+        <link rel="stylesheet" href="{% static 'notes/styles.css' %}">
+    </head>
+    <body>
+        <header>
+            <h1>
+                {% block header %}
+                Sticky Note Board
+                {% endblock header %}
+            </h1>
+            <!-- add navigation links or header content-->
+        </header>
+        <main>
+            {% block content %}
+            {% endblock content %}
+        </main>
+        <footer>
+            <!--add footer content or links-->
+        </footer>
+    </body>
+</html>
